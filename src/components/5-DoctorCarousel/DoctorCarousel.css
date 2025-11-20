@@ -1,0 +1,57 @@
+.doctors {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../../assets/cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.container .card-text {
+  text-align: center;
+  padding-top: 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.card-text h1 {
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 700;
+  font-family: "El Messiri", sans-serif;
+}
+
+.card-text p {
+  font-size: clamp(16px, 1vw, 14px);
+  font-weight: 600;
+  font-family: "Alexandria", sans-serif;
+}
+
+.card-text h3 {
+  font-size: clamp(13px, 1.6vw, 24px);
+  font-weight: 600;
+  font-family: "Alexandria", sans-serif;
+}
+
+.cards h1 {
+  font-size: clamp(14px, 1vw, 20px);
+  font-weight: 700;
+  font-family: "Alexandria", sans-serif;
+  padding-top: 5px;
+}
+
+.cards p {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Alexandria", sans-serif;
+  padding-top: 10px;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+}

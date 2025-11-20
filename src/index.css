@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  box-sizing: border-box;
+  letter-spacing: 0.1px;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.scroll2top {
+  background-color: #ffd73e;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 11%;
+  right: 2%;
+  text-align: center;
+  border: 1px solid rgba(255 255 255 0.2);
+  cursor: pointer;
+  z-index: 9999999;
+  transition: 0.3s;
+  color: white;
+  box-shadow: #ffd73e 1px 0 10px;
+  font-size: 20px;
+}
+
+.scroll2top:hover {
+  background-color: #ffd73e;
+}
+
+.icon-whatsapp1 {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  bottom: 11%;
+  left: 2%;
+  z-index: 100;
+  background-color: #01e311;
+  border-radius: 50%;
+  color: white;
+  box-shadow: #01e311 1px 0 10px;
+  font-size: 30px;
+}

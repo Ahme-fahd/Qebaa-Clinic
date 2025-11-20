@@ -1,0 +1,82 @@
+#about {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../../assets/cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+p {
+  font-family: "Alexandria", sans-serif;
+}
+.about-section {
+  border-radius: 32px;
+  padding: 24px;
+  gap: 64px;
+}
+.section-intro h2 {
+  font-size: clamp(16px, 3vw, 48px);
+  font-family: "El Messiri", sans-serif;
+  font-weight: 700;
+}
+.section-intro h1 {
+  font-size: clamp(13px, 2.5vw, 36px);
+  font-family: "Alexandria", sans-serif;
+  font-weight: 600;
+}
+.section-intro p {
+  font-size: clamp(13px, 1vw, 20px);
+  font-family: "Alexandria", sans-serif;
+  font-weight: 400;
+  line-height: 36px;
+}
+.mobile-img img {
+  border-radius: 0 8px 8px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  #about {
+    margin-right: 32px;
+    margin-left: 32px;
+  }
+  .about-section {
+    flex-direction: column;
+
+    border-radius: 16px;
+    padding: 16px;
+  }
+
+  .section-intro p {
+    padding-bottom: 2px;
+    padding-top: 2px;
+  }
+  .mobile-img {
+    align-items: center;
+    padding: 0 8px 8px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-img img {
+    border-radius: 0 0 8px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about {
+    margin-right: 16px;
+    margin-left: 16px;
+  }
+  .about-section {
+    padding: 8px;
+    gap: 16px;
+    border-radius: 16px;
+  }
+  .mobile-img {
+    padding: 8px;
+    gap: 8px;
+  }
+}

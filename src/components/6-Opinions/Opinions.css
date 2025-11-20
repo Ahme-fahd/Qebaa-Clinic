@@ -1,0 +1,172 @@
+.img-content {
+  background-image: url(../../assets/BgImgKid.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 519px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 70px;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #f1f2f2 0%, rgba(241, 242, 242, 0) 40%);
+}
+
+.box-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: 0%;
+}
+.box {
+  background: linear-gradient(
+    180deg,
+    #e0e4fa 30%,
+    rgba(140, 217, 235, 0.3) 100%
+  );
+  height: 248px;
+
+  border-radius: 12px;
+  border: 2px solid white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 32px 60px 32px 60px;
+  gap: 40px;
+  margin-bottom: 200px;
+  margin-right: 90px;
+}
+
+.box h1 {
+  font-family: "El Messiri", sans-serif;
+  font-size: clamp(13px, 2.2vw, 32px);
+  font-weight: 700;
+  position: relative;
+  transform: none;
+}
+
+.box p {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(8px, 1vw, 16px);
+  font-weight: 400;
+}
+.box button {
+  width: 190px;
+  height: 19px;
+  padding: 24px;
+  border: 1px solid #e9bd25;
+  font-size: clamp(8px, 1vw, 16px);
+  font-weight: 500;
+  font-family: "Alexandria", sans-serif;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.box button:hover {
+  background-color: #ffd73e;
+  color: #ffffff;
+}
+
+.opinions {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../../assets/cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.content h1 {
+  font-family: "El Messiri", sans-serif;
+}
+
+.content h3 {
+  font-family: "Alexandria", sans-serif;
+}
+
+.border-orange-400 {
+  color: #e9bd25;
+}
+#controls-carousel img {
+  max-height: 100%;
+  width: auto;
+}
+
+/* media query */
+@media screen and (max-width: 1024px) {
+  .img-content {
+    height: 30vh;
+  }
+
+  .box {
+    width: 300px;
+    height: 130px;
+    margin-bottom: 30px;
+    padding: 16px;
+    margin-right: 40px;
+  }
+
+  .box p {
+    padding: 0;
+  }
+
+  .box button {
+    width: 120px;
+    height: 10px;
+    padding: 15px;
+    margin-top: 12px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .img-content {
+    height: 155px;
+    padding: 8px;
+  }
+  .box {
+    padding: 8px;
+    width: 200px;
+    height: 100px;
+    margin-right: 40px;
+
+    transform: translateY(-50%);
+  }
+
+  .box p {
+    padding: 0;
+  }
+
+  .box button {
+    margin-top: 15px;
+    width: 83px;
+    height: 18px;
+    padding: 10px;
+    font-size: 6px;
+  }
+
+  .carousel-container img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .box {
+    margin-bottom: 45px;
+  }
+}

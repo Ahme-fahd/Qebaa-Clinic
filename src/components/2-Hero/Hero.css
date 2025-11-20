@@ -1,0 +1,135 @@
+.hero {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../../assets/cover.png);
+  background-size: cover;
+  background-position: center;
+}
+/* p t r b l */
+.hero-content {
+  padding: 32px 144px 32px 144px;
+
+  /* max-width: 60%; */
+}
+
+.hero-content h2 {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(24px, 3vw, 48px);
+  font-weight: 400;
+}
+
+.hero-content h1 {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(24px, 5vw, 80px);
+  font-weight: 700;
+}
+
+.hero-content #colorized {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(13px, 2vw, 40px);
+  font-weight: 700;
+}
+
+.hero-content .custom {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(13px, 2vw, 32px);
+  font-weight: 400;
+}
+
+.hero-content p {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(13px, 1vw, 20px);
+  font-weight: 300;
+}
+
+.hero button {
+  color: #e9bd2599;
+  border: 2px solid #e9bd2599;
+  width: 200px;
+  height: 46px;
+  font-size: clamp(16px, 1vw, 16px);
+  font-family: "Alexandria", sans-serif;
+  font-weight: 800;
+  border-radius: 4px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero button:hover {
+  background-color: #ffd73e;
+  color: #ffffff;
+}
+
+.image {
+  max-width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 429.63px;
+  height: 414.74px;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.image-intro img {
+  height: 350px;
+}
+/* media queries */
+@media screen and (max-width: 1024px) {
+  .hero-content {
+    text-align: center;
+    padding-right: 32px;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(../../assets/cover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .hero-content {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .image-intro img {
+    height: 300px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(../../assets/cover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .hero-content {
+    padding-top: 0;
+  }
+  .hero button {
+    width: 156px;
+    height: 34px;
+    font-size: 13px;
+    padding: 8px 16px 8px 16px;
+  }
+  .image-intro img {
+    height: 230px;
+    width: 230px;
+  }
+}

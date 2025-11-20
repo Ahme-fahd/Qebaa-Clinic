@@ -1,0 +1,89 @@
+.visit-us {
+  /* max-width: 1440px; */
+  max-height: auto;
+  margin: 0 auto;
+  background-image: url(../../assets/visit-us/visit-us.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.visit-us h2 {
+  font-family: "El Messiri", sans-serif;
+  font-size: clamp(24px, 3.5vw, 64px);
+  font-weight: 500;
+}
+
+.visit-us p {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(13px, 1.5vw, 24px);
+  font-weight: 400;
+
+  line-height: 35px;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.content-wrapper h3,
+.content-wrapper p,
+.content-wrapper a {
+  font-family: "Alexandria", sans-serif;
+}
+.map-section {
+  width: 48%;
+  padding: 16px 32px 16px 32px;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.09) 90%,
+    #f1f2f2 140%
+  );
+  border: 1px solid white;
+  border-radius: 12px;
+}
+.working-hours-section {
+  width: 48%;
+}
+.map-placeholder {
+  background-color: #f0f0f0;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.schedule {
+  list-style-type: none;
+  padding: 0;
+  font-family: "Alexandria", sans-serif;
+}
+.schedule li {
+  margin-bottom: 10px;
+}
+.day {
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .visit-us {
+    padding-right: 0;
+  }
+  .visit-us h2 {
+    text-align: right;
+  }
+  .visit-us p {
+    text-align: right;
+    line-height: 24.2px;
+  }
+
+  .content-wrapper {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .content-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}

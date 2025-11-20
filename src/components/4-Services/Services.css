@@ -1,0 +1,192 @@
+.upper-banner {
+  background-image: url("../../assets/uper-banner.png");
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upper-banner h1 {
+  font-family: "El Messiri", sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  position: relative;
+  transform: none;
+  color: #123a70;
+}
+
+.main {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../../assets/cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-section h2,
+.main-section p {
+  font-family: "Alexandria", sans-serif;
+}
+
+.main-section {
+  padding: 40px 32px 40px 32px;
+  gap: 24px;
+}
+
+.main-section h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.main-section p {
+  font-size: 19px;
+  font-weight: 400;
+}
+.bottom-banner {
+  /* margin-top: 20px; */
+  position: relative;
+  height: 286px;
+
+  text-align: right;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.bottom-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../../assets/bottom-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(95%);
+}
+
+.bottom-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
+.text {
+  padding-right: 80px;
+}
+
+.bottom-banner .text h2 {
+  font-family: "El Messiri", sans-serif;
+  color: #ffffff;
+  padding-top: 10px;
+  font-size: clamp(24px, 3vw, 45px);
+}
+
+.bottom-banner .text p {
+  font-family: "Alexandria", sans-serif;
+  color: #ffffff;
+  margin-bottom: 1rem;
+  padding-top: 10px;
+  font-size: clamp(13px, 1.3vw, 20px);
+  line-height: 32px;
+}
+
+.bottom-banner p {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .bottom-banner {
+    height: 180px;
+    padding-right: 0;
+  }
+
+  .main-section {
+    padding: 16px 32px 16px 32px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .upper-banner {
+    height: 100px;
+  }
+  .upper-banner h1 {
+    font-size: 24px;
+  }
+
+  .main-section {
+    padding: 16px;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.3),
+        rgba(255, 255, 255, 0.3)
+      ),
+      url(../../assets/cover.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .main-section .card {
+    width: 358px;
+    height: 224px;
+    margin: auto;
+    padding: 16px;
+    gap: 16px;
+  }
+  .main-section .tooth-image {
+    width: 64px;
+    height: 64px;
+    margin: auto;
+  }
+  .main-section h2 {
+    font-size: 24px;
+  }
+  .main-section p {
+    font-size: 16px;
+  }
+
+  .bottom-banner {
+    height: 230px;
+    line-height: 24px;
+    /* padding: 10px; */
+  }
+  .bottom-banner .text {
+    padding-right: 0;
+  }
+  .bottom-banner .text h2 {
+    padding-top: 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .main-section .card {
+    width: 250px;
+    padding-top: 0;
+  }
+
+  .main-section .tooth-image {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+  }
+
+  .main-section h2 {
+    font-size: 18px;
+  }
+  .main-section p {
+    font-size: 11px;
+  }
+
+  .bottom-banner {
+    line-height: 0;
+    height: 250px;
+  }
+}

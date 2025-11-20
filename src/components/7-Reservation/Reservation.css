@@ -1,0 +1,73 @@
+.contact-us {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.4)
+    ),
+    url(../../assets/cover.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-us h1 {
+  font-family: "El Messiri", sans-serif;
+  font-size: clamp(24px, 4vw, 64px);
+  font-weight: 700;
+}
+.contact-us p {
+  font-family: "Alexandria", sans-serif;
+  font-size: clamp(13px, 1.5vw, 24px);
+  font-weight: 400;
+}
+
+.call-us {
+  line-height: 50px;
+}
+
+/* Media Queries for Responsive Design */
+
+@media screen and (max-width: 1024px) {
+  .contact-us {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+      ),
+      url(../../assets/cover.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media screen and (max-width: 692px) {
+  .call-us {
+    line-height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-us {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.4)
+      ),
+      url(../../assets/cover.png);
+    background-size: contain;
+    background-position: center;
+    /* background-repeat: no-repeat; */
+  }
+
+  .reservation {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .contact-us p {
+    padding-right: 0;
+    padding-left: 0;
+    font-size: 11px;
+  }
+  .contact-us h1 {
+    margin-bottom: 0;
+  }
+}
